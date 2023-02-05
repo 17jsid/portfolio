@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=CV, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b74b6d8961.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-sharp fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-sharp fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Student</p>
+                <h1>Hi, I'm <span>Siddharth</span><br>Kr From India</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ------------- about ------------- -->
+    <div id="about">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>A motivated individual with in-depth knowledge of languages and development tools, seeking a position
+                    in a growth-oriented company where I can use my skills to the advantage of the company while having
+                    the scope to develop my
+                    own skills.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                        <li><span>Web Development</span><br>Web app Development</li>
+                        <li><span>ML Enthusiast</span><br>Building Machine Learning models</li>
+                        <li><span>Languages</span><br>CPP, JavaScript, HTML, CSS, MySQL, Basic Python</li>
+                        <li><span>Focused On</span><br>Problem Solving, Data Structures and Algorithms, Competitive
+                            Programming, OOPS,
+                            Operating Systems, Computer Networks, Software Engineering, Database Management Systems</li>
+                        <li><span>Soft Skills</span><br>Time Management, Teamwork, Communication, Leadership,
+                            Accountability</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span></span><br>Scored 165/175 in JOB-A-THON 10 conducted by GeeksforGeeks.</li>
+                        <li><span></span><br>Reached in top 15 teams in TVS Credit EPIC Challenge.</li>
+                        <li><span></span><br>Secured global rank of 365 in starters 47 conducted by CodeChef.</li>
+                        <li><span></span><br>Max. Rating of 1657 at CodeChef</li>
+                        <li><span></span><br>Secured global rank of 365 in starters 47 conducted by CodeChef.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2017-2019</span><br>
+                            <p>National Institute of Technology, Jamshedpur</p>
+                            <p>Bachelor of Technology - Computer Science and Engineering</p>
+                            <p>CGPA: 8.10</p>
+                        </li>
+                        <li><span>2006-2017</span><br>
+                            <p>Jawahar Vidya Mandir, Shyamali</p>
+                            <p>Class 12th - Central Board of Secondary Education (CBSE) </p>
+                            <p>Percentage: 80</p>
+                        </li>
+                        <li><span>2006-2017</span><br>
+                            <p>Jawahar Vidya Mandir, Shyamali</p>
+                            <p>Class 10th - Central Board of Secondary Education (CBSE) </p>
+                            <p>CGPA: 10.00</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------services----- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Machine Learning</h2>
+                    <p>Used various techniques of supervised and unsupervised learning algorithms for creating ML model
+                        by using
+                        ANN.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-codepen"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Created various clones of different OTT platforms where UI/UX play vital role.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Using Software Engineering models created house resale website.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------portfolio----- -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3><b>Hotstar Clone</b></h3>
+                        <p>• Created a Hotstar clone webpage.
+                            • Used HTML, CSS and JavaScript in building web-page.
+                            • Implemented CSS and libraries of JavaScript for alignments in webpage</p>
+                        <a href="https://17jsid.github.io/Hotstar_Clone/"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3><b>Photo Editor</b></h3>
+                        <p>• Created a hotstar clone webpage.
+                            • Used HTML, CSS and JavaScript in building webpage.
+                            • Implemented CSS and libraries of javascript for alignments in webpage.</p>
+                        <a href="https://photo-editor-siddharth.netlify.app/"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3><b>Resale Value of Vechicle</b></h3>
+                        <p>• Created UI/UX AND FRONT-END
+                            • Used IMAGE CLASSIFICATION using TensorFlow
+                            • Implemented PRICE PREDICTION using machine learning algorithms</p>
+                        <a href="https://github.com/17jsid/ml-car-defective/blob/master/notebook.ipynb"><i
+                                class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- ------contact------ -->
+
+    <div id="contact">
+        <div class="conatiner">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-sharp fa-solid fa-paper-plane"></i> xolosiddharth@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +91 8235937114</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/siddharth-kumar-50bbb170/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.facebook.com/Siddharth.Poke/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com/Sidweed17"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/17jsiddharth/"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="text" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy Siddharth. Made <i class="fa-regular fa-heart"></i> by Siddharth</p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemeu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemeu.style.right = "-200px";
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbznoywBwOcA-zyM2iDprH2xXwUQoRtMLe25t5hx20mgluclnsTMFFWjafr8ke-KjlJM/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
